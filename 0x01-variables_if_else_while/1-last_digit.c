@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main -Determines if the last digit of a variable is greater than 5, is 0 or less than 6
+ * main -Determines if the last digit is greater than 5, is 0 or less than 6
  *
  * Return: Always 0 (Success)
  */
