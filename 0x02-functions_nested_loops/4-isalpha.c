@@ -3,6 +3,8 @@
 /**
  * _isalpha - prints 1 for letters and 0 for others
  *
+ * @c: Are ASCII characters
+ *
  * Return: 1 for letters, 0 for others
  */
 
