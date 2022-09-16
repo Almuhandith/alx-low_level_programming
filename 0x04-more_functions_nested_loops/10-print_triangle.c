@@ -2,7 +2,6 @@
 
 /**
  * print_triangle - prints a trangle
- * 
  * @size: length of sides minus hypotenuse
  *
  * Return: void
@@ -11,7 +10,8 @@
 void print_triangle(int size)
 {
 	int line = 0;
-	int spaces, hashes;
+	int spaces;
+	int hashes;
 
 	if (size > 0)
 	{
