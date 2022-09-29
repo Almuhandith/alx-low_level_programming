@@ -19,7 +19,7 @@ int sqrt_iterate(int c, int g)
 	}
 	else
 	{
-		return (sqrt_iterate(c , g + 1));
+		return (sqrt_iterate(c, g + 1));
 	}
 }
 
