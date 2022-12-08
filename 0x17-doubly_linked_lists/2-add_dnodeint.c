@@ -3,12 +3,13 @@
  * add_dnodeint - adds a nodee to the beginning of the
  * dlistint_t list
  *
- * @h: head of the list
+ * @head: head of the list
+ * @n: data
  * Return: the number of nodes
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-    dlistint_t *new;
+	dlistint_t *new;
 	dlistint_t *h;
 
 	new = malloc(sizeof(dlistint_t));

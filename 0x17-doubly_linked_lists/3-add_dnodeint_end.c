@@ -1,14 +1,15 @@
 #include "lists.h"
 /**
- * print_dlistint - prints all the elements of a
+ * add_dnodeint_end - adds a node to the end of the
  * dlistint_t list
  *
- * @h: head of the list
+ * @head: head of the list
+ * @n: data
  * Return: the number of nodes
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-    dlistint_t *new;
+	dlistint_t *new;
 	dlistint_t *h;
 
 	new = malloc(sizeof(dlistint_t));
