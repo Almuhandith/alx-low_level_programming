@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_dlistint - prints all the elements of a
+ * add_dnodeint - adds a nodee to the beginning of the
  * dlistint_t list
  *
  * @h: head of the list
