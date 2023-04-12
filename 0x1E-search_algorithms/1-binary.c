@@ -18,7 +18,7 @@ int binary_search(int *array, size_t size, int value)
 	size_t middle;
 
 	if (array == NULL)
-		return -1;
+		return (-1);
 
 	index = 0;
 	last = size - 1;
@@ -28,17 +28,16 @@ int binary_search(int *array, size_t size, int value)
 	{
 		printf("Searching in array: ");
 		for (i = index; i <= last; i++)
-		{
 			printf("%d%s ", array[i], (i != last) ? "," : "");
-		}
 		printf("\n");
 		if (array[middle] == value)
 		{
-			return middle;
+			return (middle);
 		} else if (array[middle] < value)
 		{
 			index = middle + 1;
-		} else {
+		} else
+		{
 			last = middle - 1;
 		}
 		middle = (index + last) / 2;
