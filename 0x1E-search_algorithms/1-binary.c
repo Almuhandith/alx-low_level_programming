@@ -24,23 +24,21 @@ int binary_search(int *array, size_t size, int value)
 	last = size - 1;
 	middle = (index + last) / 2;
 
-	while (index <= last)
+	while (index != last)
 	{
 		printf("Searching in array: ");
 		for (i = index; i <= last; i++)
 			printf("%d%s ", array[i], (i != last) ? "," : "");
 		printf("\n");
 		if (array[middle] == value)
-		{
 			return (middle);
-		} else if (array[middle] < value)
-		{
+		else if (array[middle] < value)
 			index = middle + 1;
-		} else
-		{
+		else
 			last = middle - 1;
-		}
 		middle = (index + last) / 2;
 	}
+	if (array[middle] == value)
+		return (last);
 	return (-1);
 }
