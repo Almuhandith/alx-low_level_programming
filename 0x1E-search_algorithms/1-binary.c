@@ -36,7 +36,7 @@ int recursive_search(int *array, size_t size, int value)
 /**
  * binary_search - calls to binary_search to return
  * the index of the number
- * 
+ *
  * @array: input array
  * @size: size of the array
  * @value: value to search in
@@ -45,11 +45,11 @@ int recursive_search(int *array, size_t size, int value)
 int binary_search(int *array, size_t size, int value)
 {
 	int index;
-	
+
 	index = recursive_search(array, size, value);
-	
+
 	if (index >= 0 && array[index] != value)
-			return (-1);
-	
+		return (-1);
+
 	return (index);
 }
